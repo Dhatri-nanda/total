@@ -36,15 +36,4 @@ v.get_patch_by_id('01').set_color('white')
 plt.axis('on')
 plt.show()
 
-import matplotlib.pyplot as plt
-from matplotlib_venn import venn2
-A = set([0.05])
-B = set([0.95])
-v = venn2([A,B], ('P(E)', 'P(-E)'))
-
-v.get_label_by_id('10').set_text('\n'.join(map(str,A)))
-v.get_label_by_id('01').set_text('\n'.join(map(str,B)))
-v.get_patch_by_id('01').set_color('white')
-plt.axis('on')
-plt.show()
 
